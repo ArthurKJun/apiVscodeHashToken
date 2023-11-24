@@ -1,1 +1,12 @@
 passo a passo para iniciar o servidor e 
+
+
+
+
+
+o que fazer na atividade
+
+criar uma pagina para cadastrar usuario e uma para fazer o login. deve ser utilizada a API criada
+em sala de aula. o token retornado pela tela de login deve ser armazenado no storage.
+
+postar no git

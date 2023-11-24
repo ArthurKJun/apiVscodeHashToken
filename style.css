@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+    
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+.container-geral{
+    
+    width: 100vw;
+    height: 100vh;
+    background: #6c7a89;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-container{
+
+    display: flex;   
+    position: absolute;   
+    top: 40%;
+    flex-direction: column;
+}
+
+.logo-container img{
+    padding: 1rem;    
+    border-radius: 50%;
+    height: 400px;        
+}
+
+#form-container{
+    display: flex;    
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 5%;
+}
+
+#register-form{
+    
+    border: 2px solid white;
+    padding: .7rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+#register-form h3{
+    margin-bottom: 20px;
+}
+
+#register-form input{
+
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+#register-form input[type="submit"]{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#register-form input[type="submit"]:hover{
+    background-color: rgb(90, 95, 152);
+    color: black;
+}
+
+/*---------------------------------------------------------*/
+/* tela de entrada */
+
+h1{
+    background-color: #6c7a89;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(204, 198, 198);    
+}
+
+.container-porta-cards{
+    
+    background-color: #475061;
+    display: flex;        
+    width: 535px;
+    height: 550px;    
+    border: 2px solid white;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 2rem;
+
+}
+
+.card{
+    
+    background-color: #9ca5af;
+    display: flex;
+    padding: .5rem;
+    margin: .5rem;    
+    width: 150px;
+    height: 150px;    
+    border: 2px solid white;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition: .4s;
+
+}
+
+.container-porta-cards-2 :active{
+    background-color: aqua;
+}
+    
+
+
+.container-porta-cards :hover{
+
+    background-color: #6c7a89;
+    cursor: pointer;
+}
+
+.card img{
+
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    transition: .4s;
+}
+
+#venda{
+    
+    width: 480px;
+    height: 150px;
+}
+
+.container-geral-entrada{
+    
+    width: 100vw;
+    height: calc(100vh + 200px);
+    background: #9ca5af;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+/* area de vendas */
+
+.container-porta-cards-2{
+    
+    flex: 1.4;
+    background-color: #475061;             
+    border: 2px solid white;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
+}
+
+.container-porta-cards-2 :hover{
+
+    background-color: #6c7a89;
+    cursor: pointer;
+}
+
+.container-lista-vendas{
+    height: 36.9rem;
+    margin-right: 2rem;
+    margin: 1rem;
+    flex: 1;
+    background-color: #475061;             
+    border: 2px solid white;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 1rem;
+}
+
+.container-geral-3{
+    
+    gap: 1rem;
+    width: 100vw;
+    height: 100vh;
+    background: #9ca5af;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+table{
+
+    margin-top: 1rem;
+    position: absolute;
+    margin-left: 2rem;
+    
+}
+table th {
+    
+    padding: .5rem;
+    width: 200px;
+    background-color: #6c7a89;
+    border-radius: 10px;
+    
+} 
+
+table td{    
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #6c7a89;
+    border-radius: 10px;    
+}
+
+.bExcluir{
+    background-color: transparent;
+}
+
+.excluir{
+    background-color: transparent;
+    border-radius: 5px;    
+}
+
+.excluir img{
+    width: 1rem;
+}
+
+tfoot td{
+    font-weight: bold;
+    
+}
+
+/* tela cadastro cliente */
+
+.container-geral-4{
+    
+    width: 100vw;
+    height: 100vh;
+    background: #9ca5af;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    display: flex;
+
+}
+
+.inputs-cadastro{    
+    
+       
+    flex: 1;
+    text-align: center;    
+
+}
+
+.inputs-cadastro input{
+    
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    
+}
+
+.inputs-cadastro h3{
+
+    margin-top: 1rem;
+      
+
+}
+
+.inputs-cadastro button{
+
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: large;
+    background-color: #9ca5af;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.inputs-cadastro button:hover{
+
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.inputButton:hover{
+
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.container-porta-cards-cad{
+    
+    background-color: #6c7a89;    
+    width: 400px;
+    height: 500px;    
+    color:#040405;
+    justify-items: center;
+    margin-top: 2rem;
+
+}
+
+.cliente{
+    
+    background-color: #9ca5af;
+    margin: 1rem;
+    border-radius: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #040405;
+}
+
+.container-geral-4 h1{
+
+    margin-top: -4rem;
+    
+}
+
+.produto{
+
+    background-color: #9ca5af;
+    margin: 1rem;
+    border-radius: 5px; 
+}
+
+.container-porta-cards-cad-fornecedor{
+
+    background-color: #6c7a89;    
+    width: 400px;
+    height: 500px;    
+    color:#040405;
+    justify-items: center;
+    margin-top: 1rem;
+}
+
+.inputs-cadastro-for{    
+     
+    flex: 1;
+    text-align: center;    
+
+}
+
+.inputs-cadastro-for input{
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.inputs-cadastro-for button{
+
+    padding: 0.5rem;
+    margin: .5rem;
+    font-size: large;
+    background-color: #9ca5af;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.inputs-cadastro-for button:hover{
+
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.fornecedor{
+    background-color: #9ca5af;
+    margin: 1rem;
+    border-radius: 5px;  
+}

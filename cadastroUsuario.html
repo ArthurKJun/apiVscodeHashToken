@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+	<div class="container-geral-4">
+
+		<h1>Cadastro de Usuário</h1>
+
+		<div class="container-porta-cards-cad">
+
+			<div class="inputs-cadastro">
+
+				<form action="gravarCliente.jsp?editar=no" method="POST">
+					<h3>Nome</h3>
+					<input type="text" id="nome" name="nome"
+						placeholder="Informe o nome">
+					<h3>Email</h3>
+					<input type="text" id="email" name="email" placeholder="Informe o Email">
+					<h3>Telefone</h3>
+					<input type="text" id="fone" name="fone"
+						placeholder="Informe o telefone">
+					<hr>
+					<button onclick="Validar()">Salvar</button>
+
+				</form>
+				<hr>
+				<input
+						style="padding: 0.5rem; margin: 1rem; font-size: large; background-color: #9ca5af; border: none; border-radius: 10px;"						
+						type="button"
+						onclick="document.location.href='#'"
+						value="Mostrar">
+				
+				<hr>				
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>
