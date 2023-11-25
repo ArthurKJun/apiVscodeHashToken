@@ -22,26 +22,39 @@
 						placeholder="Informe o nome">
 					<h3>Email</h3>
 					<input type="text" id="email" name="email" placeholder="Informe o Email">
-					<h3>Telefone</h3>
-					<input type="text" id="fone" name="fone"
-						placeholder="Informe o telefone">
+					<h3>Senha</h3>
+					<input type="text" id="senha" name="senha"
+						placeholder="Informe a senha">
+					<h3>Perfil</h3>	
+					<input type="text" name="Perfil" placeholder="Selecione o Perfil"
+					onfocus="focado()" onblur="desfoque()">
+					<div class="menuDropDown">
+						<div class="listDropDown">
+							<div class="item" id="administrador">Administrador</div>
+							<div class="item" id="operador">Operador</div>
+							<div class="item" id="caixa">Caixa</div>
+							<div class="item" id="diretoria">Diretoria</div>
+						</div>
+					</div>
+						
 					<hr>
 					<button onclick="Validar()">Salvar</button>
 
 				</form>
 				<hr>
-				<input
-						style="padding: 0.5rem; margin: 1rem; font-size: large; background-color: #9ca5af; border: none; border-radius: 10px;"						
-						type="button"
-						onclick="document.location.href='#'"
-						value="Mostrar">
 				
-				<hr>				
-
 			</div>
 
 		</div>
 
 	</div>
 </body>
+<script>
+	function focado(){
+		document.getElementsByClassName('menuDropDown')[0].style.display="block";
+	}
+	function desfoque(){
+		document.getElementsByClassName('menuDropDown')[0].style.display="none";
+	}
+</script>
 </html>

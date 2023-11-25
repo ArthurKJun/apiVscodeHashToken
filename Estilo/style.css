@@ -95,3 +95,41 @@ h1{
     margin-top: -4rem;
     
 }
+
+.menuDropDown{
+           
+    background-color: #b1c2d4;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: .5px solid #fff;
+    height: 60px;
+    overflow: auto; /*para colocar o conteudo dentro do box*/
+    display: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6c7a89;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar{
+    background-color: #9ca5af;
+    width: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.item{
+    
+    border-radius: 10px;
+    height: 20px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.item:hover{
+    background-color: #6c7a89;
+    padding-left: 7px;
+}
