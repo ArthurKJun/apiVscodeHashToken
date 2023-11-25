@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+    
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+
+h1{
+    background-color: #6c7a89;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(204, 198, 198);    
+}
+
+
+.container-geral-4{
+    
+    width: 100vw;
+    height: 100vh;
+    background: #9ca5af;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    display: flex;
+
+}
+
+.inputs-cadastro{    
+          
+    flex: 1;
+    text-align: center;    
+
+}
+
+.inputs-cadastro input{
+    
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    
+}
+
+.inputs-cadastro h3{
+
+    margin-top: 1rem;      
+
+}
+
+.inputs-cadastro button{
+
+    padding: 0.5rem;
+    margin: 1rem;
+    font-size: large;
+    background-color: #9ca5af;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.inputs-cadastro button:hover{
+
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.inputButton:hover{
+
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}
+
+.container-porta-cards-cad{
+    
+    background-color: #6c7a89;    
+    width: 400px;
+    height: 500px;    
+    color:#040405;
+    justify-items: center;
+    margin-top: 2rem;
+
+}
+
+.container-geral-4 h1{
+
+    margin-top: -4rem;
+    
+}
