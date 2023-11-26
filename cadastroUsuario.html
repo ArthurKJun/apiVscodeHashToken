@@ -27,13 +27,13 @@
 						placeholder="Informe a senha">
 					<h3>Perfil</h3>	
 					<input type="text" name="Perfil" placeholder="Selecione o Perfil"
-					onfocus="focado()" onblur="desfoque()">
+					onfocus="dropDown(0)" onblur="dropDown(1)">
 					<div class="menuDropDown">
 						<div class="listDropDown">
-							<div class="item" id="administrador">Administrador</div>
-							<div class="item" id="operador">Operador</div>
-							<div class="item" id="caixa">Caixa</div>
-							<div class="item" id="diretoria">Diretoria</div>
+							<div class="item" id="item-1" onMouseDown="category(1)">Administrador</div>
+							<div class="item" id="item-2" onmousedown="category(2)">Operador</div>
+							<div class="item" id="item-3" onmousedown="category(3)">Caixa</div>
+							<div class="item" id="item-4" onmousedown="category(4)">Diretoria</div>
 						</div>
 					</div>
 						
@@ -50,11 +50,19 @@
 	</div>
 </body>
 <script>
-	function focado(){
-		document.getElementsByClassName('menuDropDown')[0].style.display="block";
+	
+	function category(c){
+		var item = document.getElementById('item-' + c).innerHTML;
+		document.getElementsByTagName('input')[3].value = item;
 	}
-	function desfoque(){
-		document.getElementsByClassName('menuDropDown')[0].style.display="none";
+	
+	function dropDown(p){
+		
+		var e = document.getElementsByClassName('menuDropDown')[0];
+		var d = ['block','none'];
+
+		e.style.display = d[p];
 	}
+		
 </script>
 </html>
