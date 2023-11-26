@@ -62,6 +62,12 @@
 		var d = ['block','none'];
 
 		e.style.display = d[p];
+
+		var t = ['0px','0px,-10px'];
+
+		setTimeout(function(){
+			e.style.transform = 'translate('+t[p]+')';
+		},300);
 	}
 		
 </script>

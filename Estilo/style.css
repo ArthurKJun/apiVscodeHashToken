@@ -105,6 +105,9 @@ h1{
     height: 60px;
     overflow: auto; /*para colocar o conteudo dentro do box*/
     display: none;
+
+    translate: 0px, -10px;
+    
 }
 
 ::-webkit-scrollbar-thumb{
